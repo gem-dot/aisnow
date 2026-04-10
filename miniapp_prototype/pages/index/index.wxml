@@ -1,0 +1,71 @@
+<view class="container">
+  <view class="card">
+    <view class="title">滑雪分析助手</view>
+    <view class="subtle">一个识别底座，三种模式：JSBA / SAJ / 进阶</view>
+  </view>
+
+  <view class="card">
+    <view class="section-title">服务配置</view>
+    <view class="subtle">当前后端</view>
+    <input class="input" value="{{baseUrl}}" bindinput="onBaseUrlInput" placeholder="请输入固定 HTTPS 域名" />
+    <view class="subtle" style="margin-top: 12rpx;">提示：正式上线必须使用微信后台已配置的固定 HTTPS 域名。</view>
+  </view>
+
+  <view class="card">
+    <view class="section-title">分析模式</view>
+    <picker mode="selector" range="{{pipelineLabels}}" value="{{pipelineIndex}}" bindchange="onPipelineChange">
+      <view class="input">{{pipelineLabels[pipelineIndex] || '请选择模式'}}</view>
+    </picker>
+    <view class="subtle" style="margin-top: 12rpx;">{{currentPipeline.description}}</view>
+  </view>
+
+  <view class="card">
+    <view class="section-title">上传视频</view>
+    <input class="input" value="{{taskName}}" bindinput="onTaskNameInput" placeholder="可选：自定义任务名" />
+    <view class="row" style="margin-top: 18rpx;">
+      <button class="btn-ghost" bindtap="chooseVideo">选择视频</button>
+      <button class="btn-primary" bindtap="uploadSelectedVideo" loading="{{uploading}}" disabled="{{!selectedVideoPath || uploading}}">上传并分析</button>
+    </view>
+    <view class="metric">已选视频：{{selectedVideoName || '未选择'}}</view>
+    <view class="metric" wx:if="{{uploadProgress > 0}}">上传进度：{{uploadProgress}}%</view>
+    <view class="metric" wx:if="{{statusMessage}}">{{statusMessage}}</view>
+  </view>
+
+  <view class="card">
+    <view class="row">
+      <view class="section-title">任务列表</view>
+      <button size="mini" class="btn-ghost" bindtap="refreshAll">刷新</button>
+    </view>
+    <block wx:if="{{tasks.length}}">
+      <block wx:for="{{tasks}}" wx:key="id">
+        <view style="padding: 16rpx 0; border-top: 1rpx solid #e2e8f0;">
+          <view class="row">
+            <view style="font-weight: 600;">{{item.task_name}}</view>
+            <view class="badge">{{item.pipeline_label}}</view>
+          </view>
+          <view class="metric">状态：{{item.status}} · 进度 {{item.progress || 0}}%</view>
+          <view class="metric">{{item.message}}</view>
+        </view>
+      </block>
+    </block>
+    <view class="subtle" wx:else>当前暂无任务。</view>
+  </view>
+
+  <view class="card">
+    <view class="section-title">最近结果</view>
+    <block wx:if="{{runs.length}}">
+      <block wx:for="{{runs}}" wx:key="name">
+        <view style="padding: 12rpx 0; border-top: 1rpx solid #e2e8f0;">
+          <view class="row">
+            <view style="font-weight: 600;">{{item.name}}</view>
+            <view class="subtle">{{item.updated_at}}</view>
+          </view>
+          <view class="metric">弯数 {{item.metrics_summary.turn_count || '-'}} · 同步 {{item.metrics_summary.sync_score || '-'}} · RMSE {{item.metrics_summary.rmse || '-'}} · Corr {{item.metrics_summary.correlation || '-'}}</view>
+          <video wx:if="{{item.previewVideo}}" class="video" src="{{item.previewVideo}}" controls></video>
+          <image wx:if="{{item.pressurePlot}}" class="thumb" src="{{item.pressurePlot}}" mode="widthFix" bindtap="previewImage" data-url="{{item.pressurePlot}}"></image>
+        </view>
+      </block>
+    </block>
+    <view class="subtle" wx:else>当前暂无已完成结果。</view>
+  </view>
+</view>

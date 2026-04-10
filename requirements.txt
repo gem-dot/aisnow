@@ -1,0 +1,21 @@
+# AI4Snow 滑雪视频分析引擎 - 依赖包
+
+# Web 框架
+flask>=2.3.0
+flask-cors>=4.0.0
+flask-socketio>=5.3.0
+
+# AI 和计算
+torch>=2.0.0
+torchvision>=0.15.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+scipy>=1.10.0
+
+# 图像处理
+Pillow>=10.0.0
+matplotlib>=3.7.0
+
+# 工具
+tqdm>=4.65.0
+pyyaml>=6.0

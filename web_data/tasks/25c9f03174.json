@@ -1,0 +1,34 @@
+{
+  "id": "25c9f03174",
+  "created_at": "2026-03-17T15:02:46+08:00",
+  "updated_at": "2026-03-17T15:02:47+08:00",
+  "original_name": "5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file.MP4",
+  "requested_name": "",
+  "task_name": "web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_25c9f03174",
+  "pipeline_id": "saj",
+  "pipeline_label": "SAJ · Infinity 连续圆弧",
+  "upload_path": "/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/web_data/uploads/25c9f03174_web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_25c9f03174.mp4",
+  "status": "failed",
+  "queue_state": "queued",
+  "stage": "failed",
+  "progress": 0.0,
+  "stage_progress": 0.0,
+  "message": "任务执行失败。",
+  "logs": [
+    "Fatal Python error: init_sys_streams: can't initialize sys standard streams",
+    "Python runtime state: core initialized",
+    "OSError: [Errno 9] Bad file descriptor",
+    "Current thread 0x0000000203bda0c0 (most recent call first):",
+    "<no Python frame>"
+  ],
+  "output_dir": "/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_25c9f03174",
+  "output_files": {},
+  "review_files": {},
+  "metrics_summary": {},
+  "issue_reports": [],
+  "error": "RuntimeError('子进程失败，退出码 1')",
+  "metadata": {
+    "python": "/Users/bill_chlt/miniconda3/envs/snowboard/bin/python"
+  },
+  "pid": 8710
+}

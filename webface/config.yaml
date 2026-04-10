@@ -1,0 +1,21 @@
+credentials:
+  usernames:
+    demo:
+      email: demo@ski.ai
+      name: 演示用户
+      password: $2b$12$cBrP5ppX1VSKtwXQDSl.jO/IQTNin0l6QDKI1OUwq7NzTgOJvnc2.
+      quota: 10
+    admin:
+      email: admin@ski.ai
+      name: 管理员
+      password: $2b$12$GvQx00IBGa133.xrFQZR.u6kp4Ns6UkM6A9NLBLODQK1CgKjq1Kv6
+      quota: 999
+
+cookie:
+  expiry_days: 30
+  key: ski_avatar_secret_key_2024
+  name: ski_avatar_cookie
+
+preauthorized:
+  emails:
+  - newuser@ski.ai

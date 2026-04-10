@@ -1,0 +1,20 @@
+# frp 客户端配置 - Mac mini
+serverAddr = "103.251.89.147"
+serverPort = 7000
+auth.token = "MurphySki2026!"
+
+# 映射后端 API 服务
+[[proxies]]
+name = "ski-backend"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 8765
+remotePort = 8765
+
+# 映射前端开发服务（可选，用于测试）
+[[proxies]]
+name = "ski-frontend-dev"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 3000
+remotePort = 3000

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ski Avatar Pro Web</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <h1>Ski Avatar Pro 控制台</h1>
+      <p>自己上传视频，自动排队处理，出问题时直接在成片卡片里留备注给我复查。</p>
+      <div class="hero-note">
+        <span>默认串行排队，优先保证稳定。</span>
+        <span>支持批量上传，多条视频会自动依次入队。</span>
+        <span>当前 `model1` 已封装好，后续可直接挂 `model2 / model3`。</span>
+      </div>
+    </header>
+
+    <section class="stats-grid" id="dashboard-stats">
+      <article class="stat-card">
+        <div class="stat-label">任务队列</div>
+        <div class="stat-value">--</div>
+        <div class="stat-sub">等待健康检查</div>
+      </article>
+      <article class="stat-card">
+        <div class="stat-label">运行中</div>
+        <div class="stat-value">--</div>
+        <div class="stat-sub">等待健康检查</div>
+      </article>
+      <article class="stat-card">
+        <div class="stat-label">已完成成片</div>
+        <div class="stat-value">--</div>
+        <div class="stat-sub">等待扫描</div>
+      </article>
+      <article class="stat-card">
+        <div class="stat-label">默认流程</div>
+        <div class="stat-value">model1</div>
+        <div class="stat-sub">等待健康检查</div>
+      </article>
+    </section>
+
+    <section class="card info-card">
+      <div class="section-title">
+        <h2>访问入口</h2>
+        <span class="badge completed">ready</span>
+      </div>
+      <div class="service-list" id="service-urls">
+        {% for key, url in access_urls.items() %}
+          <a class="service-chip" href="{{ url }}" target="_blank" rel="noreferrer">{{ key }} · {{ url }}</a>
+        {% endfor %}
+      </div>
+      <div class="tip">如果后面挂了公网域名或反向代理，只要设置 `WEB_PUBLIC_BASE_URL` 就会自动展示公网入口。</div>
+    </section>
+
+    <section class="card guide-card">
+      <div class="section-title">
+        <h2>怎么用</h2>
+        <span class="badge queued">self-service</span>
+      </div>
+      <div class="guide-grid">
+        <article class="guide-item">
+          <div class="guide-index">1</div>
+          <div>
+            <div class="guide-title">上传视频</div>
+            <div class="guide-text">把一个或多个滑雪视频拖进来，系统会自动按顺序排队。</div>
+          </div>
+        </article>
+        <article class="guide-item">
+          <div class="guide-index">2</div>
+          <div>
+            <div class="guide-title">看进度与结果</div>
+            <div class="guide-text">任务卡会显示 tracking / pose / render / QA 进度，完成后直接预览和下载。</div>
+          </div>
+        </article>
+        <article class="guide-item">
+          <div class="guide-index">3</div>
+          <div>
+            <div class="guide-title">有问题就留备注</div>
+            <div class="guide-text">如果某条视频识别不准，直接在卡片里写问题和时间段；你再来叫我，我就按那条排查模型。</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="card upload-card">
+      <h2>上传新视频</h2>
+      <form id="upload-form">
+        <label class="dropzone" id="dropzone">
+          <input id="video-input" type="file" name="video" accept="video/*" multiple required>
+          <span class="drop-title">把视频拖进来，或者点击选择</span>
+          <span class="drop-subtitle">支持 mp4 / mov；可一次选多个视频，系统会自动串行入队</span>
+        </label>
+        <div id="selected-files" class="selected-files">还未选择文件。</div>
+        <div class="form-row">
+          <input id="task-name" name="task_name" type="text" placeholder="可选任务名前缀，例如 ski_demo_01">
+          <select id="pipeline-select" name="pipeline_id">
+            {% for pipeline in pipelines %}
+              <option value="{{ pipeline.id }}" {% if pipeline.id == default_pipeline_id %}selected{% endif %}>{{ pipeline.label }}</option>
+            {% endfor %}
+          </select>
+          <button type="submit" id="submit-btn">开始处理</button>
+        </div>
+        <div class="pipeline-note" id="pipeline-note">
+          {% for pipeline in pipelines %}
+            {% if pipeline.id == default_pipeline_id %}
+              当前流程：{{ pipeline.description }}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </form>
+      <div id="upload-message" class="message"></div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <div class="section-title">
+          <h2>网页任务</h2>
+          <button class="ghost" id="refresh-tasks">刷新</button>
+        </div>
+        <div class="tip compact-tip">这里显示本次通过网页上传的任务、实时日志和结果文件。</div>
+        <div id="task-list" class="list empty">暂时还没有网页上传任务。</div>
+      </div>
+
+      <div class="card">
+        <div class="section-title">
+          <h2>已有输出</h2>
+          <button class="ghost" id="refresh-runs">刷新</button>
+        </div>
+        <div class="tip compact-tip">这里会自动扫描 `output/` 下已有成片，方便回看历史结果。</div>
+        <div id="run-list" class="list empty">正在扫描现有成片目录。</div>
+      </div>
+    </section>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

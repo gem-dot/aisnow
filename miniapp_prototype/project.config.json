@@ -1,0 +1,11 @@
+{
+  "appid": "touristappid",
+  "projectname": "ski-avatar-miniapp-prototype",
+  "setting": {
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": false,
+    "urlCheck": false
+  }
+}

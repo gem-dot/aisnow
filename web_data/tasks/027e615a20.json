@@ -1,0 +1,118 @@
+{
+  "id": "027e615a20",
+  "created_at": "2026-03-17T15:12:43+08:00",
+  "updated_at": "2026-03-17T15:44:39+08:00",
+  "original_name": "5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file.MP4",
+  "requested_name": "",
+  "task_name": "web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20",
+  "pipeline_id": "saj",
+  "pipeline_label": "SAJ · Infinity 连续圆弧",
+  "upload_path": "/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/web_data/uploads/027e615a20_web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20.mp4",
+  "status": "completed",
+  "queue_state": "queued",
+  "stage": "qa",
+  "progress": 100.0,
+  "stage_progress": 100.0,
+  "message": "任务完成，可在线预览或下载视频和复核图。",
+  "logs": [
+    "Render Overlay:  91%|█████████ | 1454/1594 [00:29<00:02, 51.18frame/s]",
+    "Render Overlay:  92%|█████████▏| 1460/1594 [00:29<00:02, 50.61frame/s]",
+    "Render Overlay:  92%|█████████▏| 1466/1594 [00:29<00:02, 49.83frame/s]",
+    "Render Overlay:  92%|█████████▏| 1471/1594 [00:29<00:02, 48.62frame/s]",
+    "Render Overlay:  93%|█████████▎| 1476/1594 [00:29<00:02, 48.12frame/s]",
+    "Render Overlay:  93%|█████████▎| 1481/1594 [00:30<00:02, 47.13frame/s]",
+    "Render Overlay:  93%|█████████▎| 1486/1594 [00:30<00:02, 46.95frame/s]",
+    "Render Overlay:  94%|█████████▎| 1491/1594 [00:30<00:02, 47.04frame/s]",
+    "Render Overlay:  94%|█████████▍| 1496/1594 [00:30<00:02, 47.47frame/s]",
+    "Render Overlay:  94%|█████████▍| 1501/1594 [00:30<00:01, 46.96frame/s]",
+    "Render Overlay:  94%|█████████▍| 1506/1594 [00:30<00:01, 47.37frame/s]",
+    "Render Overlay:  95%|█████████▍| 1511/1594 [00:30<00:01, 47.63frame/s]",
+    "Render Overlay:  95%|█████████▌| 1516/1594 [00:30<00:01, 47.77frame/s]",
+    "Render Overlay:  95%|█████████▌| 1521/1594 [00:30<00:01, 48.32frame/s]",
+    "Render Overlay:  96%|█████████▌| 1526/1594 [00:30<00:01, 48.80frame/s]",
+    "Render Overlay:  96%|█████████▌| 1532/1594 [00:31<00:01, 49.53frame/s]",
+    "Render Overlay:  96%|█████████▋| 1538/1594 [00:31<00:01, 50.08frame/s]",
+    "Render Overlay:  97%|█████████▋| 1544/1594 [00:31<00:00, 51.08frame/s]",
+    "Render Overlay:  97%|█████████▋| 1550/1594 [00:31<00:00, 51.58frame/s]",
+    "Render Overlay:  98%|█████████▊| 1556/1594 [00:31<00:00, 51.70frame/s]",
+    "Render Overlay:  98%|█████████▊| 1562/1594 [00:31<00:00, 53.40frame/s]",
+    "Render Overlay:  98%|█████████▊| 1568/1594 [00:31<00:00, 49.90frame/s]",
+    "Render Overlay:  99%|█████████▊| 1574/1594 [00:31<00:00, 48.70frame/s]",
+    "Render Overlay:  99%|█████████▉| 1579/1594 [00:32<00:00, 48.04frame/s]",
+    "Render Overlay:  99%|█████████▉| 1584/1594 [00:32<00:00, 48.04frame/s]",
+    "Render Overlay: 100%|█████████▉| 1590/1594 [00:32<00:00, 48.58frame/s]",
+    "Render Overlay: 100%|██████████| 1594/1594 [00:32<00:00, 49.32frame/s]",
+    "[Success] 高精度骨骼叠加视频已生成，请验收输出文件。",
+    "[Overlay] /Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20_overlay.mp4",
+    "[Compare] /Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20_side_by_side.mp4",
+    "[Slow Overlay] /Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/ski_keypoints_overlay_slow.mp4",
+    "[Slow Compare] /Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/ski_keypoints_side_by_side_slow.mp4",
+    "Traceback (most recent call last):",
+    "File \"/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/pressure_curve_analysis.py\", line 1467, in <module>",
+    "raise SystemExit(main())",
+    "^^^^^^",
+    "File \"/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/pressure_curve_analysis.py\", line 1438, in main",
+    "render_pressure_sync_video(",
+    "File \"/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/pressure_curve_analysis.py\", line 1256, in render_pressure_sync_video",
+    "panel = figure_to_bgr(figure)",
+    "^^^^^^^^^^^^^^^^^^^^^",
+    "File \"/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/pressure_curve_analysis.py\", line 1003, in figure_to_bgr",
+    "rgba = np.frombuffer(figure.canvas.buffer_rgba(), dtype=np.uint8).reshape(height, width, 4)",
+    "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+    "ValueError: cannot reshape array of size 8294400 into shape (720,720,4)",
+    "[Run Name] web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20",
+    "[Input] /Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/web_data/uploads/027e615a20_web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20.mp4",
+    "[Run Dir] /Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20",
+    "[Mode] ByteTrack + RTMPose-X + overlap-aware render + anti-lag refine",
+    "[Command] /Users/bill_chlt/miniconda3/envs/snowboard/bin/python /Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/video_keypoint_tracker.py --input /Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/web_data/uploads/027e615a20_web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20.mp4 --output /Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20_overlay.mp4 --compare-output /Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20_side_by_side.mp4 --track-cache /Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/.cache/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20_bytetrack_boxes.pt --keypoint-cache /Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/.cache/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20_rtmpose_keypoints.pt --seed-kp /Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/__missing__seed.pt --local-bbx /Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/__missing__bbx.pt --force-redo-track --force-redo-pose",
+    "[Pressure Command] /Users/bill_chlt/miniconda3/envs/snowboard/bin/python /Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/pressure_curve_analysis.py --keypoint-cache /Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/.cache/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20_rtmpose_keypoints.pt --video /Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/web_data/uploads/027e615a20_web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20.mp4 --output /Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/review/pressure_comparison_analysis.png --csv-output /Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/review/pressure_curve_timeseries.csv --metrics-output /Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/review/pressure_curve_metrics.json --video-source /Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20_overlay.mp4 --video-output /Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20_pressure_sync.mp4 --title Infinity 连续圆弧压力分析 · web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20 --style infinity",
+    "Traceback (most recent call last):",
+    "File \"/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/run_ski_pipeline.py\", line 136, in <module>",
+    "raise SystemExit(main())",
+    "^^^^^^",
+    "File \"/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/run_ski_pipeline.py\", line 123, in main",
+    "subprocess.run(pressure_cmd, check=True, cwd=str(PROJ_ROOT))",
+    "File \"/Users/bill_chlt/miniconda3/envs/snowboard/lib/python3.11/subprocess.py\", line 571, in run",
+    "raise CalledProcessError(retcode, process.args,",
+    "subprocess.CalledProcessError: Command '['/Users/bill_chlt/miniconda3/envs/snowboard/bin/python', '/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/pressure_curve_analysis.py', '--keypoint-cache', '/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/.cache/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20_rtmpose_keypoints.pt', '--video', '/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/web_data/uploads/027e615a20_web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20.mp4', '--output', '/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/review/pressure_comparison_analysis.png', '--csv-output', '/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/review/pressure_curve_timeseries.csv', '--metrics-output', '/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/review/pressure_curve_metrics.json', '--video-source', '/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20_overlay.mp4', '--video-output', '/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20_pressure_sync.mp4', '--title', 'Infinity 连续圆弧压力分析 · web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20', '--style', 'infinity']' returned non-zero exit status 1."
+  ],
+  "output_dir": "/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20",
+  "output_files": {
+    "overlay": {
+      "path": "/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20_overlay.mp4",
+      "url": "/files/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20_overlay.mp4"
+    },
+    "side_by_side": {
+      "path": "/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20_side_by_side.mp4",
+      "url": "/files/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20_side_by_side.mp4"
+    }
+  },
+  "review_files": {
+    "pressure_plot": {
+      "path": "/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/review/pressure_comparison_analysis.png",
+      "url": "/files/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/review/pressure_comparison_analysis.png"
+    },
+    "pressure_csv": {
+      "path": "/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/review/pressure_curve_timeseries.csv",
+      "url": "/files/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/review/pressure_curve_timeseries.csv"
+    },
+    "pressure_metrics": {
+      "path": "/Users/bill_chlt/Library/Mobile Documents/com~apple~CloudDocs/Projects/滑雪项目/Ski_Avatar_Pro/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/review/pressure_curve_metrics.json",
+      "url": "/files/output/web_5D2C96EA-D8FD-4330-B805-11E9DFCFEE9F_mp4file_027e615a20/review/pressure_curve_metrics.json"
+    }
+  },
+  "metrics_summary": {
+    "turn_count": 12,
+    "sync_score": 71.7,
+    "correlation": 0.637,
+    "rmse": 0.422,
+    "mae": 0.355,
+    "analysis_window": "0-1591"
+  },
+  "issue_reports": [],
+  "error": "",
+  "metadata": {
+    "python": "/Users/bill_chlt/miniconda3/envs/snowboard/bin/python"
+  },
+  "pid": 8823
+}
